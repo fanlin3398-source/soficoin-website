@@ -603,3 +603,190 @@ section {
         flex-direction: column;
     }
 }
+
+/* 梵林方舟区 */
+.ark {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 100px 20px;
+}
+
+.ark .section-title {
+    color: white;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.ark-subtitle {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 4rem;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+.ark-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ark-section {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 3rem;
+    border-radius: 20px;
+    margin-bottom: 3rem;
+}
+
+.ark-section h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    padding-bottom: 1rem;
+}
+
+.ark-intro {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.ark-features,
+.ark-protocol,
+.ark-male-role,
+.ark-freedom,
+.ark-balance,
+.ark-economy,
+.ark-education,
+.ark-justice,
+.ark-spiritual,
+.ark-external {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.ark-feature,
+.protocol-item,
+.role-item,
+.freedom-item,
+.balance-item,
+.economy-item,
+.education-item,
+.justice-item,
+.spiritual-item,
+.external-item {
+    background: rgba(255,255,255,0.15);
+    padding: 2rem;
+    border-radius: 15px;
+    border-left: 4px solid var(--accent-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ark-feature:hover,
+.protocol-item:hover,
+.role-item:hover,
+.freedom-item:hover,
+.balance-item:hover,
+.economy-item:hover,
+.education-item:hover,
+.justice-item:hover,
+.spiritual-item:hover,
+.external-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.ark-feature h4,
+.protocol-item h4,
+.role-item h4,
+.freedom-item h4,
+.balance-item h4,
+.economy-item h4,
+.education-item h4,
+.justice-item h4,
+.spiritual-item h4,
+.external-item h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.ark-feature p,
+.protocol-item p,
+.role-item p,
+.freedom-item p,
+.balance-item p,
+.economy-item p,
+.education-item p,
+.justice-item p,
+.spiritual-item p,
+.external-item p {
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+.ark-conclusion {
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(15px);
+    padding: 4rem;
+    border-radius: 20px;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.ark-conclusion h3 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: var(--accent-color);
+}
+
+.conclusion-text {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+    opacity: 0.95;
+}
+
+.conclusion-quote {
+    font-size: 1.4rem;
+    font-style: italic;
+    margin: 2rem 0;
+    padding: 2rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    border-left: 5px solid var(--accent-color);
+}
+
+.conclusion-signature {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .ark .section-title {
+        font-size: 2rem;
+    }
+    
+    .ark-section {
+        padding: 2rem;
+    }
+    
+    .ark-features,
+    .ark-protocol,
+    .ark-male-role,
+    .ark-freedom,
+    .ark-balance,
+    .ark-economy,
+    .ark-education,
+    .ark-justice,
+    .ark-spiritual,
+    .ark-external {
+        grid-template-columns: 1fr;
+    }
+}
