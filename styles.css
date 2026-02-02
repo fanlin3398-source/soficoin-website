@@ -790,3 +790,360 @@ section {
         grid-template-columns: 1fr;
     }
 }
+
+/* 梵林方舟子页面样式 */
+.ark-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 60vh;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+/* 总览页面 */
+.ark-overview {
+    padding: 80px 20px;
+    background: var(--light-bg);
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.philosophy-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.philosophy-card:hover {
+    transform: translateY(-10px);
+}
+
+.philosophy-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.ark-pillars {
+    padding: 80px 20px;
+    background: white;
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.pillar-card {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    border-top: 4px solid var(--primary-color);
+}
+
+.pillar-header {
+    margin-bottom: 1.5rem;
+}
+
+.pillar-header h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.pillar-tag {
+    display: inline-block;
+    background: var(--accent-color);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.pillar-desc {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.pillar-features {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.pillar-features li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.ark-vision {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.vision-quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-left: 5px solid var(--accent-color);
+    background: rgba(255,255,255,0.1);
+}
+
+.vision-signature {
+    text-align: right;
+    font-style: italic;
+    margin-top: 2rem;
+}
+
+.ark-join {
+    padding: 80px 20px;
+    background: var(--light-bg);
+    text-align: center;
+}
+
+.join-text {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.join-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* 太子教育页面 */
+.education-philosophy {
+    padding: 80px 20px;
+    background: var(--light-bg);
+}
+
+.philosophy-intro {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.8;
+}
+
+.philosophy-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.education-stages {
+    padding: 80px 20px;
+    background: white;
+}
+
+.stage-block {
+    margin-bottom: 4rem;
+    padding: 3rem;
+    border-radius: 20px;
+    background: var(--light-bg);
+}
+
+.stage-1 { border-left: 6px solid #48BB78; }
+.stage-2 { border-left: 6px solid #4299E1; }
+.stage-3 { border-left: 6px solid #ED8936; }
+.stage-4 { border-left: 6px solid #9F7AEA; }
+
+.stage-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.stage-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    opacity: 0.3;
+}
+
+.stage-header h3 {
+    flex: 1;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.stage-tag {
+    background: var(--accent-color);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+}
+
+.stage-content {
+    display: grid;
+    gap: 2rem;
+}
+
+.stage-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.stage-features h4,
+.stage-principle h4 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.stage-features ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.5rem;
+}
+
+.stage-features li {
+    padding: 0.5rem;
+    background: white;
+    border-radius: 5px;
+}
+
+.stage-principle {
+    background: rgba(255,255,255,0.5);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.education-environment {
+    padding: 80px 20px;
+    background: var(--light-bg);
+}
+
+.environment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.environment-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.environment-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.environment-card ul {
+    list-style-position: inside;
+}
+
+.education-mentors {
+    padding: 80px 20px;
+    background: white;
+}
+
+.mentors-intro {
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.8;
+}
+
+.mentor-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.mentor-type {
+    background: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.mentor-type h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.education-vision {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.child-qualities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.quality {
+    background: rgba(255,255,255,0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.quality h4 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.back-navigation {
+    padding: 60px 20px;
+    background: var(--light-bg);
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+    .pillars-grid,
+    .philosophy-grid,
+    .environment-grid,
+    .mentor-types,
+    .child-qualities {
+        grid-template-columns: 1fr;
+    }
+    
+    .stage-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nav-buttons {
+        flex-direction: column;
+    }
+    
+    .join-buttons {
+        flex-direction: column;
+    }
+}
